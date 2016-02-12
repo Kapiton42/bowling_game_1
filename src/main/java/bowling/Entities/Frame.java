@@ -1,4 +1,4 @@
-package bowling;
+package bowling.Entities;
 
 
 public class Frame {
@@ -11,8 +11,21 @@ public class Frame {
         this.FrameID = FrameID;
     }
 
+    public static Frame createFrame(int FrameID){
+        return new Frame(FrameID, new RollsList());
+    }
+
+    public Frame addRoll(Roll roll){
+        Rolls.addRoll(roll);
+        return this;
+    }
+
     public static Frame createFrame(int FrameID, RollsList Rolls) {
         return new Frame(FrameID, Rolls);
+    }
+
+    public Roll getRoll(int index) {
+        return Rolls.getRoll(index);
     }
 
     @Override

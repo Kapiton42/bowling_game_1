@@ -1,4 +1,4 @@
-package bowling;
+package bowling.Entities;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -12,7 +12,7 @@ public class FramesList implements Iterable<Frame> {
     }
 
     public Frame getFrame(int index) {
-        return frames.get(index);
+        return frames.get(index-1);
     }
 
     public FramesList addFrame(Frame frame) {

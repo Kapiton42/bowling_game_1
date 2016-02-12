@@ -1,4 +1,4 @@
-package bowling;
+package bowling.Entities;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,8 +19,9 @@ public class RollsList implements Iterable<Roll> {
         }
     }
 
+
     public Roll getRoll(int index) {
-        return rolls.get(index);
+        return rolls.get(index-1);
     }
 
     public RollsList addRoll(Roll roll) {
@@ -28,10 +29,18 @@ public class RollsList implements Iterable<Roll> {
         return this;
     }
 
-    public Roll createRoll(int knocked) {
+    public RollsList createRoll(int knocked) {
         Roll roll = new Roll(knocked);
         this.addRoll(roll);
-        return roll;
+        return this;
+    }
+
+    public static RollsList loadRollsArray(int[] Rolls) {
+        RollsList newRollsList = new RollsList();
+        for (int i: Rolls) {
+            newRollsList.createRoll(i);
+        }
+        return newRollsList;
     }
 
     public int count() {

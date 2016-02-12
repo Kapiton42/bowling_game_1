@@ -1,9 +1,10 @@
-package bowling;
+package bowling.Entities;
 
 
 public class Roll {
 
     public int Knocked;
+    public int PosInFrame;
 
     public Roll(int Knocked) {
         this.Knocked = Knocked;
@@ -11,6 +12,11 @@ public class Roll {
 
     public static Roll createRoll(int Knocked) {
         return new Roll(Knocked);
+    }
+
+    public Roll setPosition(int Pos) {
+        PosInFrame = Pos;
+        return this;
     }
 
     @Override
