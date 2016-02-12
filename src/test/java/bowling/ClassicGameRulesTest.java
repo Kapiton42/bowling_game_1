@@ -1,18 +1,11 @@
 package bowling;
 
-import bowling.Entities.FramesList;
-import bowling.Entities.RollsList;
-import bowling.ScoresCalculation.ClassicGameRules;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
 /**
  * Created by boksh on 12.02.2016.
  */
 public class ClassicGameRulesTest {
 
-    public RollsList rolls;
+    /*public RollsList rolls;
     public ClassicGameRules rules;
     @Before
     public void setUp() throws Exception {
@@ -31,5 +24,5 @@ public class ClassicGameRulesTest {
         FramesList frames = rules.getFramesListFromRollsList(rolls);
         Assert.assertEquals(frames.count(),10);
 
-    }
+    }*/
 }

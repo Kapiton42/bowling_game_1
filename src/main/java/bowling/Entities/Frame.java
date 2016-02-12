@@ -18,6 +18,7 @@ public class Frame {
     public Frame addRoll(Roll roll){
         Rolls.addRoll(roll);
         return this;
+
     }
 
     public static Frame createFrame(int FrameID, RollsList Rolls) {

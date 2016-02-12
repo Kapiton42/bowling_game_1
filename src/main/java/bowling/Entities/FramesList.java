@@ -28,7 +28,7 @@ public class FramesList implements Iterable<Frame> {
         return frames.iterator();
     }
 
-    @Override
+    /*@Override
     public String toString() {
 
         StringBuilder builder = new StringBuilder();
@@ -38,6 +38,6 @@ public class FramesList implements Iterable<Frame> {
         }
         return builder.append("]").toString();
 
-    }
+    }*/
 
 }

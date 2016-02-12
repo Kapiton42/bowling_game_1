@@ -7,7 +7,6 @@ public class RollsList implements Iterable<Roll> {
 
     private ArrayList<Roll> rolls;
 
-
     public RollsList() {
         rolls = new ArrayList<Roll>();
     }
@@ -19,7 +18,6 @@ public class RollsList implements Iterable<Roll> {
         }
     }
 
-
     public Roll getRoll(int index) {
         return rolls.get(index-1);
     }
@@ -27,20 +25,6 @@ public class RollsList implements Iterable<Roll> {
     public RollsList addRoll(Roll roll) {
         rolls.add(roll);
         return this;
-    }
-
-    public RollsList createRoll(int knocked) {
-        Roll roll = new Roll(knocked);
-        this.addRoll(roll);
-        return this;
-    }
-
-    public static RollsList loadRollsArray(int[] Rolls) {
-        RollsList newRollsList = new RollsList();
-        for (int i: Rolls) {
-            newRollsList.createRoll(i);
-        }
-        return newRollsList;
     }
 
     public int count() {
