@@ -19,7 +19,7 @@ public class InputStreamGameLogSourceTest {
     public void setUp() throws Exception {
         MockArray = new ByteArrayInputStream(
         ("Player 1:10 10 10 10 10 10 10 10 10 10 5 5\r\n" +
-         "Player 2:10 10 10 10 10 10 10 10 10 10 5 5").getBytes()
+         "Player 2:5 5 10 10 10 10 10 10 10 10 10 5 5").getBytes()
         );
         source = new InputStreamGameLogSource(MockArray);
         testList = new RollsList();

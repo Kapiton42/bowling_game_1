@@ -4,9 +4,7 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Created by boksh on 13.02.2016.
- */
+
 public class FrameTest {
 
     Frame frame;

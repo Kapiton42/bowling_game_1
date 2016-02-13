@@ -13,7 +13,6 @@ public class InputStreamGameLogSource implements IGameLogSource {
 
     public InputStreamGameLogSource(InputStream stream) {
         Stream = stream;
-
     }
 
     public GameLog getGameLog() throws IOException {
@@ -24,7 +23,6 @@ public class InputStreamGameLogSource implements IGameLogSource {
             log.assignRolls(parsePlayerName(line),parseRollsList(line));
         }
         reader.close();
-
         return log;
     }
 
