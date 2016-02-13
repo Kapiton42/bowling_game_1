@@ -18,8 +18,8 @@ public class InputStreamGameLogSourceTest {
     @Before
     public void setUp() throws Exception {
         MockArray = new ByteArrayInputStream(
-        ("Player 1:10 10 10 10 10 10 10 10 10 10\r\n" +
-         "Player 2:10 10 10 10 10 10 10 10 10 10").getBytes()
+        ("Player 1:10 10 10 10 10 10 10 10 10 10 5 5\r\n" +
+         "Player 2:10 10 10 10 10 10 10 10 10 10 5 5").getBytes()
         );
         source = new InputStreamGameLogSource(MockArray);
         testList = new RollsList();
@@ -33,8 +33,9 @@ public class InputStreamGameLogSourceTest {
         testList.addRoll(new Roll(10));
         testList.addRoll(new Roll(10));
         testList.addRoll(new Roll(10));
+        testList.addRoll(new Roll(5));
+        testList.addRoll(new Roll(5));
     }
-
 
     @Test
     public void testGetGameLog() throws Exception {

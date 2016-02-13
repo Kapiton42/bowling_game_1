@@ -27,6 +27,20 @@ public class RollsList implements Iterable<Roll> {
         return this;
     }
 
+    public RollsList createRoll(int knocked) {
+        Roll roll = new Roll(knocked);
+        this.addRoll(roll);
+        return this;
+    }
+
+    public static RollsList fromIntArray(int[] RollsKnocked) {
+        RollsList newRollsList = new RollsList();
+        for (int i: RollsKnocked) {
+            newRollsList.createRoll(i);
+        }
+        return newRollsList;
+    }
+
     public int count() {
         return rolls.size();
     }
