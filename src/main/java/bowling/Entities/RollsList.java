@@ -28,7 +28,7 @@ public class RollsList implements Iterable<Roll> {
     }
 
     public RollsList createRoll(int knocked) {
-        Roll roll = new Roll(knocked);
+        Roll roll = Roll.createRoll(knocked);
         this.addRoll(roll);
         return this;
     }

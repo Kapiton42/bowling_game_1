@@ -23,18 +23,18 @@ public class InputStreamGameLogSourceTest {
         );
         source = new InputStreamGameLogSource(MockArray);
         testList = new RollsList();
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(10));
-        testList.addRoll(new Roll(5));
-        testList.addRoll(new Roll(5));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(10));
+        testList.addRoll(Roll.createRoll(5));
+        testList.addRoll(Roll.createRoll(5));
     }
 
     @Test

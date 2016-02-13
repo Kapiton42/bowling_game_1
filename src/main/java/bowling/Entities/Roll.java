@@ -4,9 +4,8 @@ package bowling.Entities;
 public class Roll {
 
     public int Knocked;
-    public int PosInFrame;
 
-    public Roll(int Knocked) {
+    private Roll(int Knocked) {
         this.Knocked = Knocked;
     }
 
@@ -14,10 +13,6 @@ public class Roll {
         return new Roll(Knocked);
     }
 
-    public Roll setPosition(int Pos) {
-        PosInFrame = Pos;
-        return this;
-    }
 
     @Override
     public String toString() {

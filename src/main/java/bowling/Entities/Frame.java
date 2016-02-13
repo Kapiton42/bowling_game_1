@@ -6,7 +6,7 @@ public class Frame {
     public RollsList Rolls;
     public int FrameID;
 
-    public Frame(int FrameID, RollsList Rolls) {
+    private Frame(int FrameID, RollsList Rolls) {
         this.Rolls = Rolls;
         this.FrameID = FrameID;
     }
