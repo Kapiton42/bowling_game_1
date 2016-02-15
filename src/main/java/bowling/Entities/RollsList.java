@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class RollsList implements Iterable<Roll> {
 
     private ArrayList<Roll> rolls;
-
+/*учитывая наличие фактори методов, лучше сделать конструкторы приватными*/
     public RollsList() {
         rolls = new ArrayList<Roll>();
     }
