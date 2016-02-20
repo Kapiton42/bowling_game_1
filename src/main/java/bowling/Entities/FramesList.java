@@ -2,6 +2,7 @@ package bowling.Entities;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+/*Функционал данного класса никак не расширяет обычный arrayList и может быть им безболезненно заменен.*/
 
 public class FramesList implements Iterable<Frame> {
 
