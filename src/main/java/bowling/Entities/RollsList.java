@@ -31,7 +31,7 @@ public class RollsList implements Iterable<Roll> {
         this.addRoll(roll);
         return this;
     }
-
+    /*Было бы неплохо добавить какую-нибудь проверку на правильность значений.Необязательно здесь.*/
     public static RollsList fromIntArray(int[] RollsKnocked) {
         RollsList newRollsList = new RollsList();
         for (int i: RollsKnocked) {
