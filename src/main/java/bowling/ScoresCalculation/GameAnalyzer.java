@@ -33,10 +33,8 @@ public class GameAnalyzer {
     public String getWinnerName(GameLog Log) throws Throwable {
         HashMap<String,Integer> results = calculateScores(Log);
         ArrayList<String> players = Log.getPlayers();
-        /*неочевидное получение победителя. Возможно, лучше добавить классу log функцию getWinner?*/
         String winner = players.get(1);
         int MaxScores = results.get(winner);
-        /*в случае равных очков будет победитель, а не ничья*/
         for (String player:players) {
             if(results.get(player)>MaxScores) {
                 winner = player; //PROBLEM: now draws are allowed. First player with max scores is winner.
